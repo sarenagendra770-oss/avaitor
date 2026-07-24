@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Transactions | AeroX Crash</title>
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/admin.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <main class="admin-shell">
+      <aside class="admin-sidebar">
+        <h2>AeroX Admin</h2>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="users.html">Users</a>
+        <a href="games.html">Games</a>
+        <a href="transactions.html" class="active">Transactions</a>
+        <a href="reports.html">Reports</a>
+        <a href="settings.html">Settings</a>
+      </aside>
+      <section class="admin-content">
+        <h1>Transactions</h1>
+        <p>Review deposits, withdrawals, and internal settlement entries.</p>
+
+        <div class="panel">
+          <h2>Deposit Approvals</h2>
+          <div id="transactionList"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/admin.js"></script>
+  </body>
+</html>

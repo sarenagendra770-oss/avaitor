@@ -1,0 +1,55 @@
+.wallet-card { min-height: 260px; }
+.deposit-panel { margin-top: 20px; }
+.preset-amounts { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0; }
+.amount-chip {
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.08);
+  color: var(--text);
+  padding: 10px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.amount-chip.active {
+  background: var(--primary);
+  color: #06121d;
+}
+.deposit-form { display: grid; gap: 12px; }
+.deposit-form label { display: grid; gap: 6px; font-weight: 600; }
+.deposit-form input, .deposit-form select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.16);
+  background: rgba(255,255,255,0.08);
+  color: var(--text);
+}
+.deposit-actions { display: flex; gap: 10px; margin-top: 6px; }
+.deposit-status {
+  margin-top: 12px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.08);
+  color: var(--text);
+}
+.reference-code { color: var(--accent); font-weight: 700; }
+.deposit-history ul { padding-left: 18px; color: var(--muted); }
+.deposit-history li { margin-bottom: 8px; }
+.withdraw-panel { margin-top: 20px; }
+.saved-banks { display: grid; gap: 10px; margin: 14px 0; }
+.bank-card {
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.bank-card button {
+  border: none;
+  border-radius: 999px;
+  padding: 8px 10px;
+  cursor: pointer;
+  background: rgba(251, 113, 133, 0.2);
+  color: #ffe4ea;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wallet | AeroX Crash</title>
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/wallet.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a class="brand" href="index.html"><span class="brand-mark">✈</span> AeroX Crash</a>
+      <div class="nav-links">
+        <a href="lobby.html">Lobby</a>
+        <a href="profile.html">Profile</a>
+      </div>
+    </nav>
+
+    <main class="page-shell">
+      <section class="panel wallet-card">
+        <h1>Wallet Balance</h1>
+        <p class="balance">$12,480.00</p>
+        <div class="wallet-actions">
+          <a class="btn primary" href="#deposit">Deposit</a>
+          <a class="btn secondary" href="#withdraw">Withdraw</a>
+        </div>
+      </section>
+
+      <section class="panel deposit-panel" id="deposit">
+        <h2>Deposit Funds</h2>
+        <p>Pay to UPI ID <strong>7997608934-5@ybl</strong> and submit the UTR for admin review.</p>
+
+        <div class="preset-amounts">
+          <button type="button" class="amount-chip" data-amount="500">₹500</button>
+          <button type="button" class="amount-chip" data-amount="1000">₹1000</button>
+          <button type="button" class="amount-chip" data-amount="2000">₹2000</button>
+          <button type="button" class="amount-chip" data-amount="10000">₹10000</button>
+        </div>
+
+        <form id="depositForm" class="deposit-form">
+          <label>
+            Custom Amount
+            <input id="customAmount" type="number" min="100" step="100" placeholder="Enter amount" />
+          </label>
+          <label>
+            Payment Method
+            <select id="paymentMethod">
+              <option value="UPI">UPI</option>
+              <option value="PhonePe">PhonePe</option>
+              <option value="GPay">GPay</option>
+              <option value="Paytm">Paytm</option>
+              <option value="Net Banking">Net Banking</option>
+            </select>
+          </label>
+          <label>
+            UTR / Transaction ID
+            <input id="utrValue" type="text" placeholder="Enter UTR" required />
+          </label>
+          <div class="deposit-actions">
+            <button type="submit" class="btn primary">Submit Deposit Request</button>
+          </div>
+          <p class="reference-code" id="referenceCode">Reference: --</p>
+        </form>
+
+        <div class="deposit-status" id="depositStatus"></div>
+
+        <div class="deposit-history">
+          <h3>Recent Requests</h3>
+          <ul id="depositHistoryList"></ul>
+        </div>
+      </section>
+
+      <section class="panel withdraw-panel" id="withdraw">
+        <h2>Withdraw Funds</h2>
+        <p>Save up to two bank accounts and request a payout for any available wallet balance.</p>
+
+        <form id="bankForm" class="deposit-form">
+          <label>
+            Account Number
+            <input id="accountNumber" type="text" maxlength="20" placeholder="Enter account number" required />
+          </label>
+          <label>
+            Account Holder Name
+            <input id="accountHolderName" type="text" placeholder="Enter account holder name" required />
+          </label>
+          <label>
+            IFSC Code
+            <input id="ifscCode" type="text" placeholder="Enter IFSC" required />
+          </label>
+          <label>
+            Bank Name
+            <input id="bankName" type="text" placeholder="Enter bank name" required />
+          </label>
+          <div class="deposit-actions">
+            <button type="submit" class="btn primary">Save Bank Account</button>
+          </div>
+        </form>
+
+        <div class="deposit-status" id="bankStatus"></div>
+
+        <div class="saved-banks" id="savedBanks"></div>
+
+        <form id="withdrawForm" class="deposit-form">
+          <label>
+            Select Bank Account
+            <select id="selectedBank"></select>
+          </label>
+          <label>
+            Withdrawal Amount
+            <input id="withdrawAmount" type="number" min="100" step="100" placeholder="Enter amount" required />
+          </label>
+          <div class="deposit-actions">
+            <button type="submit" class="btn secondary">Submit Withdrawal Request</button>
+          </div>
+        </form>
+
+        <div class="deposit-status" id="withdrawStatus"></div>
+
+        <div class="deposit-history">
+          <h3>Withdrawal Requests</h3>
+          <ul id="withdrawHistoryList"></ul>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/app.js"></script>
+    <script src="js/wallet.js"></script>
+  </body>
+</html>

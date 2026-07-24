@@ -1,0 +1,5 @@
+.hero-card, .card, .panel, .auth-card { animation: fadeUp 700ms ease both; }
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}

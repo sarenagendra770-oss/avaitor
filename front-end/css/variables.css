@@ -1,0 +1,15 @@
+:root {
+  --bg: #07111f;
+  --bg-soft: #0c1b2e;
+  --panel: rgba(255,255,255,0.08);
+  --panel-strong: rgba(255,255,255,0.14);
+  --text: #f5f7ff;
+  --muted: #8ea0bc;
+  --primary: #4ade80;
+  --primary-strong: #22c55e;
+  --accent: #38bdf8;
+  --danger: #fb7185;
+  --radius: 18px;
+  --shadow: 0 18px 48px rgba(2, 6, 23, 0.35);
+  --font: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+}
